@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Tour</title>
+    <link rel="stylesheet" href="style/book-a-tour.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/navbar.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+            <h1 class="navbar-brand text-white">TopTravel</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="box">
+        <div class="row">
+            <div class="input">
+                <p class="text">Departure from:</p>
+                <input type="text" class="field" id="start-airport" required></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <p class="text">Destination:</p>
+                <input type="text" class="field" id="dest-airport" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <p class="text">Date of Departure:</p>
+                <input type="date" id="date-start" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input">
+                <p class="text">Date of Return:</p>
+                <input type="date" id="date-return" required>
+            </div>
+        </div>
+        <button class="btn-confirm" onclick="confirmClicked()">CONFIRM</button>
+        <div class="row">
+            <div class="price">
+                <p class="text">Your Flight Price:</p>
+                <p id="price">PRICE</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="price">
+                <p class="text">Your Hotel Price:</p>
+                <p id="hotelPrice">PRICE</p>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="contacts">
+            <h1>CONTACT US</h1>
+            <p>+39 333 906 6743</p>
+            <p>cristian.cagliani@issgreppi.it</p>
+            <p>Via dei Mille 27, Monticello Brianza</p>
+        </div>
+        <div class="contacts">
+            <h1>OUR SUGGESTIONS</h1>
+            <a target="_blank" class="links" href="https://www.getours.com/expert-travel-advice/planning-your-vacation/top-20-cities-to-visit-in-europe">20 cities to visit in Europe</a><br>
+            <br>
+            <a target="_blank" href="https://travel.usnews.com/rankings/best-europe-vacations/" class="links">Best Europe Vacations</a><br>
+            <br>
+            <a target="_blank" href="https://www.afar.com/magazine/europes-best-cities" class="links">Top 10 European Cities</a><br>
+        </div>
+    </footer>
+</body>
+<script src="script/script.js"></script>
+<script src="script/book-a-tour.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>

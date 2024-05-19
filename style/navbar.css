@@ -1,0 +1,38 @@
+.navbar-brand {
+    font-size: 2.5rem;
+}
+
+ul {
+    font-size: 1.5rem;
+    color: white;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+.links{
+    color:white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    transition: text-decoration 0.3s ease;
+}
+.links:hover{
+    text-decoration: underline;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2600ff;
+    color: white;
+}
+.contacts{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    footer{
+        display: block;
+    }
+}
